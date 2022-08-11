@@ -1,0 +1,1438 @@
+@charset "UTF-8";
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+/*==================================
+   default style
+=================================*/
+.mb-2 {
+  margin-bottom: 10px !important;
+}
+
+.mb-3 {
+  margin-bottom: 15px !important;
+}
+
+.etn-devider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #f1f5f8;
+}
+
+.etn-btn,
+button.etn-btn.etn-btn-primary,
+.attr-btn-primary,
+.etn-attendee-form .etn-btn,
+.etn-ticket-widget .etn-btn,
+.etn-zoom-btn,
+.etn-settings-dashboard .button-primary {
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  background-color: #5D5DFF;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  display: inline-block;
+  padding: 5px 20px;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 35px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.etn-btn:hover, .etn-btn:focus,
+button.etn-btn.etn-btn-primary:hover,
+button.etn-btn.etn-btn-primary:focus,
+.attr-btn-primary:hover,
+.attr-btn-primary:focus,
+.etn-attendee-form .etn-btn:hover,
+.etn-attendee-form .etn-btn:focus,
+.etn-ticket-widget .etn-btn:hover,
+.etn-ticket-widget .etn-btn:focus,
+.etn-zoom-btn:hover,
+.etn-zoom-btn:focus,
+.etn-settings-dashboard .button-primary:hover,
+.etn-settings-dashboard .button-primary:focus {
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none;
+}
+.etn-btn:hover,
+button.etn-btn.etn-btn-primary:hover,
+.attr-btn-primary:hover,
+.etn-attendee-form .etn-btn:hover,
+.etn-ticket-widget .etn-btn:hover,
+.etn-zoom-btn:hover,
+.etn-settings-dashboard .button-primary:hover {
+  background-color: #09C4B7;
+}
+.etn-btn.etn-edit-btn,
+button.etn-btn.etn-btn-primary.etn-edit-btn,
+.attr-btn-primary.etn-edit-btn,
+.etn-attendee-form .etn-btn.etn-edit-btn,
+.etn-ticket-widget .etn-btn.etn-edit-btn,
+.etn-zoom-btn.etn-edit-btn,
+.etn-settings-dashboard .button-primary.etn-edit-btn {
+  color: #5d78ff;
+  background-color: #eef1ff;
+  border: none;
+  padding: 0 15px;
+}
+.etn-btn.etn-edit-btn:hover,
+button.etn-btn.etn-btn-primary.etn-edit-btn:hover,
+.attr-btn-primary.etn-edit-btn:hover,
+.etn-attendee-form .etn-btn.etn-edit-btn:hover,
+.etn-ticket-widget .etn-btn.etn-edit-btn:hover,
+.etn-zoom-btn.etn-edit-btn:hover,
+.etn-settings-dashboard .button-primary.etn-edit-btn:hover {
+  color: #09C4B7;
+}
+.etn-btn.etn-delete-btn,
+button.etn-btn.etn-btn-primary.etn-delete-btn,
+.attr-btn-primary.etn-delete-btn,
+.etn-attendee-form .etn-btn.etn-delete-btn,
+.etn-ticket-widget .etn-btn.etn-delete-btn,
+.etn-zoom-btn.etn-delete-btn,
+.etn-settings-dashboard .button-primary.etn-delete-btn {
+  color: #09C4B7;
+  background-color: #ffeeee;
+  border: none;
+  padding: 0 15px;
+}
+.etn-btn.etn-btn-border,
+button.etn-btn.etn-btn-primary.etn-btn-border,
+.attr-btn-primary.etn-btn-border,
+.etn-attendee-form .etn-btn.etn-btn-border,
+.etn-ticket-widget .etn-btn.etn-btn-border,
+.etn-zoom-btn.etn-btn-border,
+.etn-settings-dashboard .button-primary.etn-btn-border {
+  border: 1px solid #5D5DFF;
+  background-color: transparent;
+  background-image: none;
+  color: #5D5DFF;
+  text-transform: uppercase;
+}
+.etn-btn.etn-btn-border:hover,
+button.etn-btn.etn-btn-primary.etn-btn-border:hover,
+.attr-btn-primary.etn-btn-border:hover,
+.etn-attendee-form .etn-btn.etn-btn-border:hover,
+.etn-ticket-widget .etn-btn.etn-btn-border:hover,
+.etn-zoom-btn.etn-btn-border:hover,
+.etn-settings-dashboard .button-primary.etn-btn-border:hover {
+  border-color: #09C4B7;
+  color: #09C4B7;
+}
+.etn-btn.etn-btn-secondary,
+button.etn-btn.etn-btn-primary.etn-btn-secondary,
+.attr-btn-primary.etn-btn-secondary,
+.etn-attendee-form .etn-btn.etn-btn-secondary,
+.etn-ticket-widget .etn-btn.etn-btn-secondary,
+.etn-zoom-btn.etn-btn-secondary,
+.etn-settings-dashboard .button-primary.etn-btn-secondary {
+  background-color: #09C4B7;
+}
+.etn-btn.etn-btn-secondary:hover,
+button.etn-btn.etn-btn-primary.etn-btn-secondary:hover,
+.attr-btn-primary.etn-btn-secondary:hover,
+.etn-attendee-form .etn-btn.etn-btn-secondary:hover,
+.etn-ticket-widget .etn-btn.etn-btn-secondary:hover,
+.etn-zoom-btn.etn-btn-secondary:hover,
+.etn-settings-dashboard .button-primary.etn-btn-secondary:hover {
+  background-color: #5D5DFF;
+}
+
+.attr-form-control[disabled],
+.attr-form-control[readonly],
+fieldset[disabled] .attr-form-control,
+.etn-form-control[disabled],
+.etn-form-control[readonly],
+fieldset[disabled] .etn-form-control {
+  background-color: #ebeef3;
+  opacity: 1;
+}
+
+.btn-danger {
+  padding: 10px 15px;
+}
+.btn-danger:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.etn-form-control,
+.etn-attendee-form-wrap .etn-form-control,
+.attr-form-control {
+  background: #f1f5f8;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-color: transparent;
+  border: none;
+  height: 45px;
+  line-height: 45px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 100%;
+  padding: 5px 10px;
+}
+.etn-form-control:focus, .etn-form-control.focused,
+.etn-attendee-form-wrap .etn-form-control:focus,
+.etn-attendee-form-wrap .etn-form-control.focused,
+.attr-form-control:focus,
+.attr-form-control.focused {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+/**
+* Css switch start for setting page
+*/
+.etn-meta input.etn-admin-control-input {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  display: none;
+}
+.etn-meta label.etn_switch_button_label {
+  cursor: pointer;
+  width: 55px;
+  height: 24px;
+  background: #DDDDDD;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  margin: 0;
+  padding: 0 !important;
+}
+.etn-meta label.etn_switch_button_label:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 90px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.21);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.21);
+}
+.etn-meta .etn_switch_button_label:before {
+  content: "No";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+  font-size: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.etn-meta input.etn-admin-control-input:checked + label.etn_switch_button_label {
+  background: #5D5DFF;
+}
+.etn-meta input.etn-admin-control-input:checked + label.etn_switch_button_label:after {
+  left: calc(100% - 5px);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.etn-meta input.etn-admin-control-input:checked + label.etn_switch_button_label:before {
+  content: "Yes";
+  right: inherit;
+  left: 10px;
+}
+.etn-meta label.show_label_text {
+  text-indent: 0px;
+}
+
+.etn-radio-btn > input[type=radio] {
+  display: none;
+}
+.etn-radio-btn > img {
+  cursor: pointer;
+  border: 1px solid #5D5DFF;
+  max-width: 100%;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+}
+.etn-radio-btn > input[type=radio]:checked + img {
+  border: 1px solid #09C4B7;
+}
+
+.etn-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.hide_item {
+  display: none;
+}
+
+.show_item {
+  display: block;
+}
+
+/*=============================
+//  etn top label manu
+===============================-- */
+body.eventin_page_etn-event-settings, body.eventin_page_etn-event-shortcode {
+  background-color: #EDEDF8;
+}
+
+.etn-social-icon-search-input {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.etn-social-icon-search-input .input-group .input-group-addon > i {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/*=============================
+// etn settings
+===============================-- */
+.etn-wrap {
+  padding: 20px;
+  background-color: #fff;
+}
+.etn-wrap.wrap > h2:first-child {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 25px;
+  position: relative;
+  padding-left: 40px;
+}
+.etn-wrap.wrap > h2:first-child:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  font-family: "dashicons";
+  top: 0;
+  font-size: 30px;
+  line-height: 60px;
+  color: #5D5DFF;
+}
+.etn-wrap form h2 {
+  font-size: 24px;
+  position: relative;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+.etn-wrap form h2:after {
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 60px;
+  height: 4px;
+  background: #5D5DFF;
+  content: "";
+}
+.etn-wrap h2.nav-tab-wrapper {
+  margin-bottom: 30px;
+  border-bottom: none;
+}
+.etn-wrap h2.nav-tab-wrapper .nav-tab {
+  margin: 0 -1px 0 0;
+  background-color: #fff;
+  color: #707070;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  border: none !important;
+  border: 1px solid #ededed !important;
+  padding: 14px 25px;
+  text-decoration: none;
+}
+.etn-wrap h2.nav-tab-wrapper .nav-tab:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.etn-wrap h2.nav-tab-wrapper .nav-tab.nav-tab-active {
+  background-color: #5D5DFF;
+  background-image: linear-gradient(80deg, #45137B 0%, #5D5DFF 100%);
+  color: #fff;
+}
+.etn-wrap h2.nav-tab-wrapper .nav-tab:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.etn-wrap h2.nav-tab-wrapper .nav-tab:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.etn-wrap .form-table {
+  margin-bottom: 30px;
+}
+
+/*=============================
+// etn label item
+===============================-- */
+.etn-label-item {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 40px;
+}
+.etn-label-item .etn-label {
+  width: 25%;
+  margin-right: 100px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+.etn-label-item .etn-label label {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #101010;
+  display: inline-block;
+}
+.etn-label-item .etn-desc {
+  font-size: 14px;
+  line-height: 18px;
+  color: #666666;
+  margin: 0 0 15px;
+}
+.etn-label-item .etn-form-control {
+  background-color: #fff;
+}
+.etn-label-item .etn-setting-input,
+.etn-label-item .etn-form-control {
+  width: 240px;
+  height: 44px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ebeef3;
+}
+.etn-label-item .etn-setting-input:focus,
+.etn-label-item .etn-form-control:focus {
+  border: 1px solid #5D5DFF;
+}
+.etn-label-item .msg-control-box {
+  height: 90px;
+}
+.etn-label-item select {
+  padding: 0 30px 0 15px;
+}
+.etn-label-item .select2-container {
+  width: 240px !important;
+}
+.etn-label-item .select2-selection--multiple,
+.etn-label-item .select2-selection--single {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #ebeef3;
+}
+.etn-label-item .select2-selection--single {
+  height: 44px;
+}
+.etn-label-item .select2-selection--single .select2-selection__rendered {
+  line-height: 44px;
+}
+.etn-label-item .select2-selection--single .select2-selection__arrow {
+  top: 8px;
+}
+.etn-label-item .select2-container--default.select2-container--focus .select2-selection--multiple,
+.etn-label-item .select2-container--default.select2-container--focus .select2-selection--single {
+  border-color: #5D5DFF;
+}
+.etn-label-item:only-child {
+  margin-bottom: 0;
+}
+
+/*=============================
+// speaker info settings
+===============================-- */
+body.post-type-etn-speaker #etn_speaker_settings,
+body.post-type-etn-speaker #etn_schedule_settings,
+body.post-type-etn-speaker #etn_event_settings,
+body.post-type-etn-schedule #etn_speaker_settings,
+body.post-type-etn-schedule #etn_schedule_settings,
+body.post-type-etn-schedule #etn_event_settings {
+  margin-top: -20px;
+}
+body.post-type-etn-speaker .wrap h1.wp-heading-inline,
+body.post-type-etn-schedule .wrap h1.wp-heading-inline {
+  font-weight: 600;
+}
+
+#etn_speaker_settings.postbox,
+#etn_event_settings.postbox,
+#banner_settings.postbox,
+#etn_schedule_settings.postbox {
+  border: 1px solid #f5f5f5;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+#etn_speaker_settings .postbox-header,
+#etn_event_settings .postbox-header,
+#banner_settings .postbox-header,
+#etn_schedule_settings .postbox-header {
+  border-bottom: none;
+}
+#etn_speaker_settings .inside,
+#etn_event_settings .inside,
+#banner_settings .inside,
+#etn_schedule_settings .inside {
+  padding: 0 25px 12px;
+}
+#etn_speaker_settings h2.hndle,
+#etn_event_settings h2.hndle,
+#banner_settings h2.hndle,
+#etn_schedule_settings h2.hndle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #f5f5f5;
+}
+#etn_speaker_settings .etn-label-item .msg-control-box,
+#etn_event_settings .etn-label-item .msg-control-box,
+#banner_settings .etn-label-item .msg-control-box,
+#etn_schedule_settings .etn-label-item .msg-control-box {
+  height: 90px;
+  padding: 20px 25px;
+}
+#etn_speaker_settings .etn_event_upload_image_button,
+#etn_event_settings .etn_event_upload_image_button,
+#banner_settings .etn_event_upload_image_button,
+#etn_schedule_settings .etn_event_upload_image_button {
+  max-width: 100px;
+  display: block;
+}
+#etn_speaker_settings .etn-modal-search-box,
+#etn_event_settings .etn-modal-search-box,
+#banner_settings .etn-modal-search-box,
+#etn_schedule_settings .etn-modal-search-box {
+  margin-bottom: 15px;
+}
+#etn_speaker_settings .etn_speaker_socials .etn-repeater-wrap,
+#etn_speaker_settings .etn-social-clearfix .etn-repeater-wrap,
+#etn_event_settings .etn_speaker_socials .etn-repeater-wrap,
+#etn_event_settings .etn-social-clearfix .etn-repeater-wrap,
+#banner_settings .etn_speaker_socials .etn-repeater-wrap,
+#banner_settings .etn-social-clearfix .etn-repeater-wrap,
+#etn_schedule_settings .etn_speaker_socials .etn-repeater-wrap,
+#etn_schedule_settings .etn-social-clearfix .etn-repeater-wrap {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+#etn_speaker_settings .etn_speaker_socials .etn-form-control,
+#etn_speaker_settings .etn-social-clearfix .etn-form-control,
+#etn_event_settings .etn_speaker_socials .etn-form-control,
+#etn_event_settings .etn-social-clearfix .etn-form-control,
+#banner_settings .etn_speaker_socials .etn-form-control,
+#banner_settings .etn-social-clearfix .etn-form-control,
+#etn_schedule_settings .etn_speaker_socials .etn-form-control,
+#etn_schedule_settings .etn-social-clearfix .etn-form-control {
+  width: 25%;
+  float: left;
+  margin-right: 10px;
+}
+#etn_speaker_settings .etn_speaker_socials .etn-form-group.mb-2 i,
+#etn_speaker_settings .etn-social-clearfix .etn-form-group.mb-2 i,
+#etn_event_settings .etn_speaker_socials .etn-form-group.mb-2 i,
+#etn_event_settings .etn-social-clearfix .etn-form-group.mb-2 i,
+#banner_settings .etn_speaker_socials .etn-form-group.mb-2 i,
+#banner_settings .etn-social-clearfix .etn-form-group.mb-2 i,
+#etn_schedule_settings .etn_speaker_socials .etn-form-group.mb-2 i,
+#etn_schedule_settings .etn-social-clearfix .etn-form-group.mb-2 i {
+  min-width: 20px;
+}
+#etn_speaker_settings .etn_speaker_socials .show-repeater-icon,
+#etn_speaker_settings .etn-social-clearfix .show-repeater-icon,
+#etn_event_settings .etn_speaker_socials .show-repeater-icon,
+#etn_event_settings .etn-social-clearfix .show-repeater-icon,
+#banner_settings .etn_speaker_socials .show-repeater-icon,
+#banner_settings .etn-social-clearfix .show-repeater-icon,
+#etn_schedule_settings .etn_speaker_socials .show-repeater-icon,
+#etn_schedule_settings .etn-social-clearfix .show-repeater-icon {
+  min-width: 20px;
+}
+#etn_speaker_settings .etn-social-icon-list i,
+#etn_event_settings .etn-social-icon-list i,
+#banner_settings .etn-social-icon-list i,
+#etn_schedule_settings .etn-social-icon-list i {
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  cursor: pointer;
+}
+#etn_speaker_settings .etn-social-clearfix .btn-danger,
+#etn_event_settings .etn-social-clearfix .btn-danger,
+#banner_settings .etn-social-clearfix .btn-danger,
+#etn_schedule_settings .etn-social-clearfix .btn-danger {
+  padding: 10px 10px;
+  border-radius: 50%;
+  line-height: 20px;
+}
+#etn_speaker_settings .etn-social-clearfix .social-repeater .add-social,
+#etn_event_settings .etn-social-clearfix .social-repeater .add-social,
+#banner_settings .etn-social-clearfix .social-repeater .add-social,
+#etn_schedule_settings .etn-social-clearfix .social-repeater .add-social {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+}
+
+#banner_settings .etn-meta .etn_switch_button_label:before {
+  content: attr(data-right);
+}
+#banner_settings .etn-meta label.etn_switch_button_label {
+  width: 65px;
+}
+#banner_settings .etn-label-item.banner_bg_color,
+#banner_settings .etn-label-item.banner_bg_type,
+#banner_settings .etn-label-item.banner_bg_image {
+  display: none;
+}
+#banner_settings .etn-label-item.banner_bg_color .etn-label,
+#banner_settings .etn-label-item.banner_bg_color .etn-meta,
+#banner_settings .etn-label-item.banner_bg_type .etn-label,
+#banner_settings .etn-label-item.banner_bg_type .etn-meta,
+#banner_settings .etn-label-item.banner_bg_image .etn-label,
+#banner_settings .etn-label-item.banner_bg_image .etn-meta {
+  float: left;
+}
+#banner_settings .etn-meta input.etn-admin-control-input:checked + label.etn_switch_button_label:before {
+  content: attr(data-left);
+}
+
+/*=============================
+//  etn-settings-dashboard
+===============================-- */
+.etn-settings-dashboard .stuffbox {
+  background-color: transparent;
+}
+.etn-settings-dashboard .etn-settings-section {
+  padding: 30px 40px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  margin-bottom: 30px;
+}
+.etn-settings-dashboard h2.etn-main-title {
+  font-size: 22px;
+  line-height: 30px;
+  color: #101010;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D2D5DF;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.etn-settings-dashboard h2.etn-main-title i {
+  font-size: 20px;
+  color: #5D5DFF;
+  background: rgba(93, 93, 255, 0.13);
+  margin-right: 5px;
+  border-radius: 5px;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  text-align: center;
+  line-height: 36px;
+}
+.etn-settings-dashboard .etn-settings-tab {
+  margin-bottom: 25px;
+}
+.etn-settings-dashboard .etn-settings-tab .nav-tab-wrapper {
+  border-bottom: none;
+}
+.etn-settings-dashboard .etn-settings-tab .nav-tab-wrapper li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.etn-settings-dashboard .etn-settings-tab .nav-tab-wrapper li a {
+  float: none;
+  border: none;
+  display: inline-block;
+  margin: 0;
+  background-color: #fff;
+  color: #101010;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  position: relative;
+}
+.etn-settings-dashboard .etn-settings-tab .nav-tab-wrapper li a i {
+  margin-right: 5px;
+  color: #5D5DFF;
+}
+.etn-settings-dashboard .etn-settings-tab .nav-tab-wrapper li a:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.etn-settings-dashboard .etn-settings-tab .nav-tab-wrapper li.attr-active a {
+  background-color: #5D5DFF;
+  color: #fff;
+}
+.etn-settings-dashboard .etn-settings-tab .nav-tab-wrapper li.attr-active a:before {
+  opacity: 1;
+}
+.etn-settings-dashboard .etn-settings-tab .nav-tab-wrapper li.attr-active a i {
+  color: #fff;
+}
+.etn-settings-dashboard .etn-settings-tab:last-child {
+  margin-bottom: 0;
+}
+.etn-settings-dashboard .etn-settings-tab:last-child .etn-label-item:last-child {
+  margin-bottom: 15px;
+}
+.etn-settings-dashboard .etn-admin-container {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.etn-settings-dashboard .etn-shortcode-settings .etn-meta {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  float: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.etn-settings-dashboard .etn-shortcode-settings .etn-meta .attr-form-control {
+  margin-bottom: 8px;
+}
+.etn-settings-dashboard .etn-shortcode-settings .etn-meta .etn-desc {
+  max-width: 320px;
+}
+.etn-settings-dashboard .etn-shortcode-settings .etn-meta .etn_copy_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: self-end;
+      -ms-grid-row-align: self-end;
+      align-self: self-end;
+  padding: 12px 14px;
+  margin-left: 10px;
+}
+.etn-settings-dashboard .etn-api-connect-wrap {
+  margin: 30px 0 0;
+}
+.etn-settings-dashboard .etn-api-connect-wrap .mb-2 {
+  margin-bottom: 15px;
+}
+.etn-settings-dashboard .etn-api-connect-wrap .api-keys-msg {
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 280px;
+  line-height: 22px;
+}
+.etn-settings-dashboard .etn-api-connect-wrap .etn-btn {
+  line-height: 30px;
+}
+.etn-settings-dashboard .etn-secret-key {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.etn-settings-dashboard .etn-secret-key span {
+  margin-left: 5px;
+}
+
+.zoom_section_hide {
+  display: none;
+}
+
+.zoom_section {
+  display: block;
+}
+
+/*=============================
+schedule settings
+===============================-- */
+#etn_schedule_settings .etn-title,
+#etn_event_settings .etn-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#etn_schedule_settings .etn-event-shedule-collapsible,
+#etn_event_settings .etn-event-shedule-collapsible {
+  background-color: #f2f2f2;
+  padding: 10px 15px;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+#etn_schedule_settings .etn-event-shedule-collapsible i,
+#etn_event_settings .etn-event-shedule-collapsible i {
+  float: right;
+  background: #f00;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+}
+#etn_schedule_settings .etn-event-repeater-collapsible-content,
+#etn_event_settings .etn-event-repeater-collapsible-content {
+  padding: 40px 40px 0;
+  border: 1px solid #f2f2f2;
+}
+#etn_schedule_settings .etn-event-repeater-collapsible-content .etn-label-item,
+#etn_event_settings .etn-event-repeater-collapsible-content .etn-label-item {
+  margin-bottom: 20px;
+}
+
+/*=============================
+zoom metting settings
+===============================-- */
+#etn_zoom_meeting_settings,
+#etn_event_settings {
+  margin-top: 30px;
+}
+#etn_zoom_meeting_settings h2.hndle,
+#etn_event_settings h2.hndle {
+  font-size: 18px;
+  border-bottom: 1px solid #f5f5f5;
+}
+#etn_zoom_meeting_settings .inside,
+#etn_event_settings .inside {
+  padding: 20px 25px 12px;
+}
+#etn_zoom_meeting_settings.postbox,
+#etn_event_settings.postbox {
+  border: 1px solid #f5f5f5;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body.post-type-etn-zoom-meeting .wrap,
+body.post-type-etn-speaker .wrap,
+body.post-type-etn-schedule .wrap,
+body.eventin_page_etn_sales_report .wrap,
+body.post-type-etn-attendee .wrap,
+body.post-type-etn .wrap {
+  background-color: #fff;
+  padding: 40px 40px 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+}
+body.post-type-etn-zoom-meeting .wrap h1.wp-heading-inline,
+body.post-type-etn-speaker .wrap h1.wp-heading-inline,
+body.post-type-etn-schedule .wrap h1.wp-heading-inline,
+body.eventin_page_etn_sales_report .wrap h1.wp-heading-inline,
+body.post-type-etn-attendee .wrap h1.wp-heading-inline,
+body.post-type-etn .wrap h1.wp-heading-inline {
+  font-weight: 600;
+  font-size: 22px;
+}
+body.post-type-etn-zoom-meeting .search-box input[type=search],
+body.post-type-etn-zoom-meeting .tablenav .actions select,
+body.post-type-etn-speaker .search-box input[type=search],
+body.post-type-etn-speaker .tablenav .actions select,
+body.post-type-etn-schedule .search-box input[type=search],
+body.post-type-etn-schedule .tablenav .actions select,
+body.eventin_page_etn_sales_report .search-box input[type=search],
+body.eventin_page_etn_sales_report .tablenav .actions select,
+body.post-type-etn-attendee .search-box input[type=search],
+body.post-type-etn-attendee .tablenav .actions select,
+body.post-type-etn .search-box input[type=search],
+body.post-type-etn .tablenav .actions select {
+  padding: 10px 25px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border: 1px solid #ededed;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+body.post-type-etn-zoom-meeting #search-submit,
+body.post-type-etn-speaker #search-submit,
+body.post-type-etn-schedule #search-submit,
+body.eventin_page_etn_sales_report #search-submit,
+body.post-type-etn-attendee #search-submit,
+body.post-type-etn #search-submit {
+  padding: 4px 20px;
+  border: none;
+  background-color: #5D5DFF;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+body.post-type-etn-zoom-meeting .tablenav,
+body.post-type-etn-speaker .tablenav,
+body.post-type-etn-schedule .tablenav,
+body.eventin_page_etn_sales_report .tablenav,
+body.post-type-etn-attendee .tablenav,
+body.post-type-etn .tablenav {
+  margin: 10px 0 30px;
+}
+body.post-type-etn-zoom-meeting .tablenav .button,
+body.post-type-etn-speaker .tablenav .button,
+body.post-type-etn-schedule .tablenav .button,
+body.eventin_page_etn_sales_report .tablenav .button,
+body.post-type-etn-attendee .tablenav .button,
+body.post-type-etn .tablenav .button {
+  line-height: 38px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  font-weight: 600;
+  color: #101010;
+  outline: none;
+}
+body.post-type-etn-zoom-meeting .tablenav .button:hover, body.post-type-etn-zoom-meeting .tablenav .button:focus,
+body.post-type-etn-speaker .tablenav .button:hover,
+body.post-type-etn-speaker .tablenav .button:focus,
+body.post-type-etn-schedule .tablenav .button:hover,
+body.post-type-etn-schedule .tablenav .button:focus,
+body.eventin_page_etn_sales_report .tablenav .button:hover,
+body.eventin_page_etn_sales_report .tablenav .button:focus,
+body.post-type-etn-attendee .tablenav .button:hover,
+body.post-type-etn-attendee .tablenav .button:focus,
+body.post-type-etn .tablenav .button:hover,
+body.post-type-etn .tablenav .button:focus {
+  outline: none;
+}
+body.post-type-etn-zoom-meeting .subsubsub,
+body.post-type-etn-speaker .subsubsub,
+body.post-type-etn-schedule .subsubsub,
+body.eventin_page_etn_sales_report .subsubsub,
+body.post-type-etn-attendee .subsubsub,
+body.post-type-etn .subsubsub {
+  margin-bottom: 20px;
+}
+body.post-type-etn-zoom-meeting .wp-header-end,
+body.post-type-etn-speaker .wp-header-end,
+body.post-type-etn-schedule .wp-header-end,
+body.eventin_page_etn_sales_report .wp-header-end,
+body.post-type-etn-attendee .wp-header-end,
+body.post-type-etn .wp-header-end {
+  visibility: visible;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top-color: #ededed;
+  border-bottom: none;
+}
+body.post-type-etn-zoom-meeting .subsubsub a,
+body.post-type-etn-speaker .subsubsub a,
+body.post-type-etn-schedule .subsubsub a,
+body.eventin_page_etn_sales_report .subsubsub a,
+body.post-type-etn-attendee .subsubsub a,
+body.post-type-etn .subsubsub a {
+  font-weight: 600;
+  font-size: 16px;
+  outline: none;
+  color: #5D5DFF;
+}
+body.post-type-etn-zoom-meeting .subsubsub a:hover, body.post-type-etn-zoom-meeting .subsubsub a:focus,
+body.post-type-etn-speaker .subsubsub a:hover,
+body.post-type-etn-speaker .subsubsub a:focus,
+body.post-type-etn-schedule .subsubsub a:hover,
+body.post-type-etn-schedule .subsubsub a:focus,
+body.eventin_page_etn_sales_report .subsubsub a:hover,
+body.eventin_page_etn_sales_report .subsubsub a:focus,
+body.post-type-etn-attendee .subsubsub a:hover,
+body.post-type-etn-attendee .subsubsub a:focus,
+body.post-type-etn .subsubsub a:hover,
+body.post-type-etn .subsubsub a:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+body.post-type-etn-zoom-meeting .subsubsub a.current,
+body.post-type-etn-speaker .subsubsub a.current,
+body.post-type-etn-schedule .subsubsub a.current,
+body.eventin_page_etn_sales_report .subsubsub a.current,
+body.post-type-etn-attendee .subsubsub a.current,
+body.post-type-etn .subsubsub a.current {
+  color: #101010;
+}
+body.post-type-etn-zoom-meeting #post-body #normal-sortables,
+body.post-type-etn-speaker #post-body #normal-sortables,
+body.post-type-etn-schedule #post-body #normal-sortables,
+body.eventin_page_etn_sales_report #post-body #normal-sortables,
+body.post-type-etn-attendee #post-body #normal-sortables,
+body.post-type-etn #post-body #normal-sortables {
+  min-height: 1px;
+}
+body.post-type-etn-zoom-meeting .wp-heading-inline + .page-title-action,
+body.post-type-etn-speaker .wp-heading-inline + .page-title-action,
+body.post-type-etn-schedule .wp-heading-inline + .page-title-action,
+body.eventin_page_etn_sales_report .wp-heading-inline + .page-title-action,
+body.post-type-etn-attendee .wp-heading-inline + .page-title-action,
+body.post-type-etn .wp-heading-inline + .page-title-action {
+  background-color: #5D5DFF;
+  color: #fff;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  outline: none;
+}
+body.post-type-etn-zoom-meeting .wp-heading-inline + .page-title-action:focus,
+body.post-type-etn-speaker .wp-heading-inline + .page-title-action:focus,
+body.post-type-etn-schedule .wp-heading-inline + .page-title-action:focus,
+body.eventin_page_etn_sales_report .wp-heading-inline + .page-title-action:focus,
+body.post-type-etn-attendee .wp-heading-inline + .page-title-action:focus,
+body.post-type-etn .wp-heading-inline + .page-title-action:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+body.post-type-etn-zoom-meeting .wp-list-table,
+body.post-type-etn-speaker .wp-list-table,
+body.post-type-etn-schedule .wp-list-table,
+body.eventin_page_etn_sales_report .wp-list-table,
+body.post-type-etn-attendee .wp-list-table,
+body.post-type-etn .wp-list-table {
+  border: none;
+}
+body.post-type-etn-zoom-meeting .wp-list-table thead tr th,
+body.post-type-etn-zoom-meeting .wp-list-table thead tr td,
+body.post-type-etn-zoom-meeting .wp-list-table tfoot tr th,
+body.post-type-etn-zoom-meeting .wp-list-table tfoot tr td,
+body.post-type-etn-speaker .wp-list-table thead tr th,
+body.post-type-etn-speaker .wp-list-table thead tr td,
+body.post-type-etn-speaker .wp-list-table tfoot tr th,
+body.post-type-etn-speaker .wp-list-table tfoot tr td,
+body.post-type-etn-schedule .wp-list-table thead tr th,
+body.post-type-etn-schedule .wp-list-table thead tr td,
+body.post-type-etn-schedule .wp-list-table tfoot tr th,
+body.post-type-etn-schedule .wp-list-table tfoot tr td,
+body.eventin_page_etn_sales_report .wp-list-table thead tr th,
+body.eventin_page_etn_sales_report .wp-list-table thead tr td,
+body.eventin_page_etn_sales_report .wp-list-table tfoot tr th,
+body.eventin_page_etn_sales_report .wp-list-table tfoot tr td,
+body.post-type-etn-attendee .wp-list-table thead tr th,
+body.post-type-etn-attendee .wp-list-table thead tr td,
+body.post-type-etn-attendee .wp-list-table tfoot tr th,
+body.post-type-etn-attendee .wp-list-table tfoot tr td,
+body.post-type-etn .wp-list-table thead tr th,
+body.post-type-etn .wp-list-table thead tr td,
+body.post-type-etn .wp-list-table tfoot tr th,
+body.post-type-etn .wp-list-table tfoot tr td {
+  background: #EEF1FF;
+  border: none;
+  font-weight: 500;
+  line-height: 2em;
+}
+body.post-type-etn-zoom-meeting .wp-list-table #the-list tr,
+body.post-type-etn-speaker .wp-list-table #the-list tr,
+body.post-type-etn-schedule .wp-list-table #the-list tr,
+body.eventin_page_etn_sales_report .wp-list-table #the-list tr,
+body.post-type-etn-attendee .wp-list-table #the-list tr,
+body.post-type-etn .wp-list-table #the-list tr {
+  background-color: #FBFBFF;
+}
+body.post-type-etn-zoom-meeting .wp-list-table #the-list tr td,
+body.post-type-etn-zoom-meeting .wp-list-table #the-list tr th,
+body.post-type-etn-speaker .wp-list-table #the-list tr td,
+body.post-type-etn-speaker .wp-list-table #the-list tr th,
+body.post-type-etn-schedule .wp-list-table #the-list tr td,
+body.post-type-etn-schedule .wp-list-table #the-list tr th,
+body.eventin_page_etn_sales_report .wp-list-table #the-list tr td,
+body.eventin_page_etn_sales_report .wp-list-table #the-list tr th,
+body.post-type-etn-attendee .wp-list-table #the-list tr td,
+body.post-type-etn-attendee .wp-list-table #the-list tr th,
+body.post-type-etn .wp-list-table #the-list tr td,
+body.post-type-etn .wp-list-table #the-list tr th {
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.etn-report-cell {
+  margin-left: 10px;
+}
+
+.etn-notice-buy-pro-banner {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #5D5DFF;
+  min-height: 190px;
+}
+.etn-notice-buy-pro-banner .notice-banner-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.etn-notice-buy-pro-banner .notice-dismiss:before {
+  color: #fff;
+}
+
+.etn-icon-get-pro {
+  font-size: 17px;
+  color: #5D5DFF;
+}
+
+.etn-text-get-pro {
+  color: #5D5DFF;
+  font-weight: bold;
+}
+
+.etn-plugin-meta-rate-icon {
+  color: #5D5DFF;
+  font-size: 10px;
+  display: inline-block;
+  vertical-align: baseline;
+  width: auto;
+}
+
+@media (max-width: 1600px) {
+  .etn-notice-buy-pro-banner {
+    min-height: 130px;
+  }
+}
+@media (max-width: 1200px) {
+  .etn-notice-buy-pro-banner {
+    min-height: 100px;
+  }
+}
+.wpmet_pro_a_wrapper {
+  text-align: center;
+}
+
+.shortcode-generator-main-wrap {
+  display: none;
+  overflow-x: auto;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+
+button.etn-btn.s-generate-btn {
+  padding: 0 20px;
+  line-height: 20px;
+  margin-left: 15px;
+  height: 45px;
+  background-color: #5D5DFF;
+}
+button.etn-btn.s-generate-btn:hover {
+  background-color: #09C4B7;
+}
+
+.shortcode-generator-inner {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+}
+.shortcode-generator-inner .etn-setting-input,
+.shortcode-generator-inner .etn-form-control {
+  width: 100%;
+  height: 44px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: 1px solid #CCCCCC;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.shortcode-generator-inner .etn-setting-input:focus,
+.shortcode-generator-inner .etn-form-control:focus {
+  border: 1px solid #5D5DFF;
+}
+.shortcode-generator-inner .etn-field-wrap {
+  margin-bottom: 20px;
+}
+.shortcode-generator-inner .etn-field-wrap select {
+  width: 100%;
+}
+
+.copy_shortcodes {
+  display: none;
+  margin-top: 20px;
+}
+
+.shortcode-popup-close {
+  position: absolute;
+  right: -7px;
+  top: -5px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  background: #f00;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.etn-report-resend-emails.etn-btn-secondary {
+  cursor: text;
+}
+
+.set_recurrence_item .etn-label {
+  padding: 40px 0;
+}
+.set_recurrence_item .etn-meta {
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  padding: 40px 0;
+  width: 100%;
+}
+@media (min-width: 1400px) {
+  .set_recurrence_item .etn-meta {
+    width: 500px;
+  }
+}
+.set_recurrence_item .etn-meta .etn-recurring-single-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.set_recurrence_item .etn-meta .etn-recurring-single-item .etn-form-control {
+  font-weight: 600;
+  width: 150px;
+  padding: 10px 15px;
+}
+.set_recurrence_item .etn-meta .etn-recurring-event-every-label {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 8px 8px 0;
+}
+@media (min-width: 1025px) {
+  .set_recurrence_item .etn-meta .etn-recurring-event-every-label {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 35%;
+            flex: 0 0 35%;
+    max-width: 35%;
+  }
+}
+.set_recurrence_item .etn-meta .event-interval-week-name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+}
+.set_recurrence_item .etn-meta .event-interval-week-name-container li input[type=checkbox] {
+  display: none;
+}
+.set_recurrence_item .etn-meta .event-interval-week-name-container li input[type=checkbox]:checked + label {
+  background-color: #5D5DFF;
+  color: #fff;
+}
+.set_recurrence_item .etn-meta .event-interval-week-name-container li label {
+  width: 34px;
+  height: 34px;
+  background-color: #EBEEF3;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 3px;
+  text-align: center;
+  padding: 7px 0;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+
+.etn-label-item .etn-meta {
+  position: relative;
+}
+.etn-label-item .etn-meta .required-text {
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  color: #f00;
+  font-size: 12px;
+}
+
+.etn-event-dashboard-recurrence-child {
+  background-color: #5D5DFF;
+}
+
+.etn-event-dashboard-recurrence-no {
+  background-color: #707070;
+}
+
+.etn-event-dashboard-recurrence-parent {
+  background-color: yellowgreen;
+}
+
+.etn-event-dashboard-recurrence {
+  color: #DDDDDD;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.etn-recurring-event-warning {
+  background-color: #ebeef3;
+  color: #c45500;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.wpmet-notice img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+#etn_attendee_meta .inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#etn_attendee_meta .inside .view-order-button {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+/* Settings tab */
+.etn-settings-tab-wrapper.etn-settings-tab-style .etn-settings-nav {
+  border-bottom: 1px solid #D2D5DF;
+}
+.etn-settings-tab-wrapper.etn-settings-tab-style .etn-settings-nav li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.etn-settings-tab-wrapper.etn-settings-tab-style .etn-settings-nav li a {
+  display: block;
+  cursor: pointer;
+  font-weight: 500;
+  color: #000;
+  position: relative;
+  border: none;
+  padding: 15px 0;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.etn-settings-tab-wrapper.etn-settings-tab-style .etn-settings-nav li a.etn-settings-active {
+  background-color: transparent;
+  color: #5D5DFF;
+}
+.etn-settings-tab-wrapper.etn-settings-tab-style .etn-settings-nav li a.etn-settings-active:before {
+  width: 100%;
+  border: none;
+  left: 0;
+  bottom: -2px;
+  border-bottom: 3px solid;
+  border-color: #5D5DFF;
+}
+.etn-settings-tab-wrapper.etn-settings-tab-style .etn-settings-nav li a::before {
+  content: "";
+  position: absolute;
+}
+.etn-settings-tab-wrapper.etn-settings-tab-style .etn-settings-nav li a.etn-settings-active::before {
+  opacity: 1;
+  visibility: visible;
+}
+.etn-settings-tab-wrapper .etn-settings-tab-content {
+  padding-top: 20px;
+}
+.etn-settings-tab-wrapper .etn-settings-tab-content #slug-options,
+.etn-settings-tab-wrapper .etn-settings-tab-content #color-options {
+  display: none;
+}
+
+.shortcode-generator-wrap:last-child .etn-label-item {
+  margin-bottom: 15px;
+}
+.shortcode-generator-wrap:first-child {
+  margin-top: 30px;
+}
+
+.etn-recaptcha-settings .etn-label-item:last-child, .etn-recaptcha-settings .etn-label-item:only-child {
+  margin-bottom: 0;
+}
+
+#etn-attendee_data .etn-label-item:last-child, #etn-attendee_data .etn-label-item:only-child {
+  margin-bottom: 0;
+}

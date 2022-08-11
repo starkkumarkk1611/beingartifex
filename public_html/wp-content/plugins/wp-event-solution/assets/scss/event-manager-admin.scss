@@ -1,0 +1,1092 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+@import "base";
+/*=============================
+//  etn top label manu
+===============================-- */
+
+body{
+    &.eventin_page_etn-event-settings,
+    &.eventin_page_etn-event-shortcode{
+        background-color: #EDEDF8;
+    }
+}
+
+.etn-social-icon-search-input {
+    max-height: 300px;
+    overflow  : hidden;
+}
+
+.etn-social-icon-search-input .input-group .input-group-addon>i {
+    font-size : 20px;
+    margin-top: 10px;
+}
+
+
+/*=============================
+// etn settings
+===============================-- */
+
+.etn-wrap {
+    padding         : 20px;
+    background-color: $white-color;
+
+    &.wrap>h2:first-child {
+        font-weight  : 600;
+        font-size    : 30px;
+        margin-bottom: 25px;
+        position     : relative;
+        padding-left : 40px;
+
+        &:before {
+            content    : "\f111";
+            position   : absolute;
+            left       : 0;
+            font-family: "dashicons";
+            top        : 0;
+            font-size  : 30px;
+            line-height: 60px;
+            color      : $primary-color;
+        }
+    }
+
+    form h2 {
+        font-size    : 24px;
+        position     : relative;
+        margin-bottom: 25px;
+        font-weight  : 600;
+
+        &:after {
+            position  : absolute;
+            left      : 0;
+            bottom    : -15px;
+            width     : 60px;
+            height    : 4px;
+            background: $primary-color;
+            content   : "";
+        }
+    }
+
+    //   nav tab wrapper
+    h2.nav-tab-wrapper {
+        margin-bottom: 30px;
+        border-bottom: none;
+
+        .nav-tab {
+            margin          : 0 -1px 0 0;
+            background-color: #fff;
+            color           : #707070;
+            font-size       : 16px;
+            line-height     : 18px;
+            font-weight     : 600;
+            border          : none !important;
+            border          : 1px solid #ededed !important;
+            padding         : 14px 25px;
+            text-decoration : none;
+
+            &:focus {
+                outline   : none;
+                box-shadow: none;
+            }
+
+            &.nav-tab-active {
+                background-color: $primary-color;
+                background-image: linear-gradient(80deg, #45137B 0%, $primary-color 100%);
+                color           : $white-color;
+            }
+
+            &:first-child {
+                border-top-left-radius   : 8px;
+                border-bottom-left-radius: 8px;
+            }
+
+            &:last-child {
+                border-top-right-radius   : 8px;
+                border-bottom-right-radius: 8px;
+            }
+        }
+    }
+
+    .form-table {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+/*=============================
+// etn label item
+===============================-- */
+
+.etn-label-item {
+    overflow: hidden;
+    display : flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-bottom: 40px;
+
+    .etn-label {
+        width       : 25%;
+        margin-right: 100px;
+        flex        : 0 0 25%;
+
+        label {
+            font-size  : 16px;
+            line-height: 21px;
+            font-weight: 600;
+            margin     : 0 0 8px;
+            color      : #101010;
+            display    : inline-block;
+        }
+
+    }
+
+    .etn-desc {
+        font-size  : 14px;
+        line-height: 18px;
+        color      : #666666;
+        margin     : 0 0 15px;
+    }
+
+
+
+    .etn-form-control {
+        background-color: $white-color;
+    }
+
+    .etn-setting-input,
+    .etn-form-control {
+        width        : 240px;
+        height       : 44px;
+        padding      : 10px 25px;
+        border-radius: 5px;
+        border       : 1px solid transparent;
+
+        font-size         : 14px;
+        line-height       : 16px;
+        color             : #666;
+        -webkit-appearance: none;
+        -moz-appearance   : none;
+        appearance        : none;
+        background-color: #ebeef3;
+
+        &:focus {
+            border: 1px solid $primary-color;
+        }
+    }
+
+    .msg-control-box {
+        height: 90px;
+    }
+
+    select {
+        padding: 0 30px 0 15px;
+    }
+
+    // select 2
+    .select2-container {
+        width: 240px !important;
+    }
+
+    .select2-selection--multiple,
+    .select2-selection--single {
+        border-radius: 5px;
+        border       : 1px solid transparent;
+        background-color: #ebeef3;
+
+    }
+
+    .select2-selection--single {
+        height: 44px;
+
+        .select2-selection__rendered {
+            line-height: 44px;
+        }
+
+        .select2-selection__arrow {
+            top: 8px;
+        }
+    }
+
+    .select2-container--default.select2-container--focus .select2-selection--multiple,
+    .select2-container--default.select2-container--focus .select2-selection--single {
+        border-color: $primary-color;
+    }
+    &:only-child{
+        margin-bottom: 0;
+    }
+}
+
+
+/*=============================
+// speaker info settings
+===============================-- */
+
+body.post-type-etn-speaker,
+body.post-type-etn-schedule {
+    // background-color: #fff;
+
+    #etn_speaker_settings,
+    #etn_schedule_settings,
+    #etn_event_settings {
+        margin-top: -20px;
+    }
+
+    .wrap h1.wp-heading-inline {
+        font-weight: 600;
+    }
+}
+
+#etn_speaker_settings,
+#etn_event_settings,
+#banner_settings,
+#etn_schedule_settings {
+    &.postbox {
+        border    : 1px solid #f5f5f5;
+        box-shadow: none;
+    }
+    .postbox-header{
+        border-bottom: none;
+    }
+
+    .inside {
+        padding: 0 25px 12px;
+    }
+
+    h2.hndle {
+        font-size    : 18px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #f5f5f5;
+    }
+
+    .etn-label-item {
+        .msg-control-box {
+            height : 90px;
+            padding: 20px 25px;
+        }
+    }
+
+    .etn_event_upload_image_button {
+        max-width: 100px;
+        display  : block;
+    }
+
+    .etn-modal-search-box {
+        margin-bottom: 15px;
+    }
+
+    .etn_speaker_socials,
+    .etn-social-clearfix {
+        .etn-repeater-wrap {
+            display : block;
+            width   : 100%;
+            overflow: hidden;
+        }
+
+        .etn-form-control {
+            width       : 25%;
+            float       : left;
+            margin-right: 10px;
+        }
+
+        .etn-form-group.mb-2 {
+            i {
+                min-width: 20px;
+            }
+        }
+
+        .show-repeater-icon {
+            min-width: 20px;
+        }
+    }
+
+    .etn-social-icon-list {
+        i {
+            padding: 10px;
+            border : 1px solid #eaeaea;
+            cursor : pointer;
+        }
+    }
+
+    .etn-social-clearfix {
+        .btn-danger {
+            padding      : 10px 10px;
+            border-radius: 50%;
+            line-height  : 20px;
+        }
+
+        .social-repeater {
+            .add-social {
+                margin-top: 10px;
+                display   : block;
+                width     : 100%;
+            }
+        }
+    }
+}
+
+// banner settings for event single page
+#banner_settings {
+    .etn-meta .etn_switch_button_label:before {
+        content: attr(data-right);
+    }
+    .etn-meta label.etn_switch_button_label{
+        width: 65px;
+    }
+    .etn-label-item.banner_bg_color,
+    .etn-label-item.banner_bg_type,
+    .etn-label-item.banner_bg_image{
+        display: none;
+        .etn-label,
+        .etn-meta{
+            float: left;
+        }
+    }
+    .etn-meta input.etn-admin-control-input:checked+label.etn_switch_button_label:before {
+        content: attr(data-left);
+    }
+}
+
+/*=============================
+//  etn-settings-dashboard
+===============================-- */
+
+.etn-settings-dashboard {
+    .stuffbox {
+        background-color: transparent;
+    }
+
+    .etn-settings-section {
+        padding         : 30px 40px 20px;
+        background-color: #fff;
+        @include border-radius(5px);
+        margin-bottom: 30px;
+    }
+
+    h2.etn-main-title {
+        font-size    : 22px;
+        line-height  : 30px;
+        color        : #101010;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #D2D5DF;
+        font-weight  : 700;
+        margin-bottom: 30px;
+
+        i {
+            font-size   : 20px;
+            color       : $primary-color;
+            background       : rgba($primary-color, 0.13);
+            margin-right: 5px;
+            border-radius: 5px;
+            width: 36px;
+            height: 36px;
+            display: inline-block;
+            text-align: center;
+            line-height: 36px;
+        }
+    }
+
+    .etn-settings-tab {
+        margin-bottom: 25px;
+
+        .nav-tab-wrapper {
+            border-bottom: none;
+
+            li {
+                display     : inline-block;
+                margin-right: 10px;
+
+                a {
+                    float           : none;
+                    border          : none;
+                    display         : inline-block;
+                    margin          : 0;
+                    background-color: #fff;
+                    color           : #101010;
+                    font-size       : 15px;
+                    line-height     : 18px;
+                    padding         : 14px 30px;
+                    text-decoration : none;
+                    font-weight     : 500;
+                    @include border-radius(5px);
+                    position: relative;
+
+                    i {
+                        margin-right: 5px;
+                        color       : $primary-color;
+                    }
+
+                    &:focus {
+                        outline   : none;
+                        box-shadow: none;
+                    }
+
+                }
+
+                &.attr-active {
+                    a {
+                        background-color: $primary-color;
+                        color           : #fff;
+
+                        &:before {
+                            opacity: 1;
+                        }
+
+                        i {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+        }
+        &:last-child{
+                margin-bottom: 0;
+                .etn-label-item{
+                    &:last-child{
+                        margin-bottom: 15px;
+                    }
+                }
+        }
+    }
+
+    .etn-admin-container {
+        border    : none;
+        box-shadow: none;
+    }
+
+    .etn-shortcode-settings {
+        .etn-meta {
+            align-self: start;
+            float     : none;
+            display   : flex;
+
+            .attr-form-control {
+                margin-bottom: 8px;
+            }
+
+            .etn-desc {
+                max-width: 320px;
+            }
+
+            .etn_copy_button {
+                display    : flex;
+                align-self : self-end;
+                padding    : 12px 14px;
+                margin-left: 10px;
+            }
+        }
+
+    }
+
+    .etn-api-connect-wrap {
+        margin: 30px 0 0;
+
+        .mb-2 {
+            margin-bottom: 15px;
+        }
+
+        .api-keys-msg {
+            font-size  : 16px;
+            font-weight: 600;
+            max-width  : 280px;
+            line-height: 22px;
+        }
+
+        .etn-btn {
+            line-height: 30px;
+        }
+    }
+
+    .etn-secret-key {
+        display    : flex;
+        align-items: center;
+
+        span {
+            margin-left: 5px;
+        }
+    }
+}
+
+.zoom_section_hide {
+    display: none;
+}
+
+.zoom_section {
+    display: block;
+}
+
+
+/*=============================
+schedule settings
+===============================-- */
+
+#etn_schedule_settings,
+#etn_event_settings {
+    .etn-title {
+        font-size    : 20px;
+        font-weight  : 700;
+        margin-bottom: 20px;
+    }
+
+    .etn-event-shedule-collapsible {
+        background-color: #f2f2f2;
+        padding         : 10px 15px;
+        overflow        : hidden;
+        font-size       : 16px;
+        font-weight     : 600;
+        line-height     : 30px;
+        cursor          : pointer;
+        @include border-radius(5px);
+
+        i {
+            float        : right;
+            background   : #f00;
+            color        : #fff;
+            width        : 30px;
+            height       : 30px;
+            line-height  : 30px;
+            border-radius: 50%;
+        }
+    }
+
+    .etn-event-repeater-collapsible-content {
+        padding: 40px 40px 0;
+        border : 1px solid #f2f2f2;
+        .etn-label-item{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/*=============================
+zoom metting settings
+===============================-- */
+
+
+
+#etn_zoom_meeting_settings,
+#etn_event_settings {
+    margin-top: 30px;
+
+    h2.hndle {
+        font-size    : 18px;
+        border-bottom: 1px solid #f5f5f5;
+    }
+
+    .inside {
+        padding: 20px 25px 12px;
+    }
+
+    &.postbox {
+        border    : 1px solid #f5f5f5;
+        box-shadow: none;
+    }
+
+}
+
+
+body.post-type-etn-zoom-meeting,
+body.post-type-etn-speaker,
+body.post-type-etn-schedule,
+body.eventin_page_etn_sales_report,
+body.post-type-etn-attendee,
+body.post-type-etn {
+    .wrap {
+        background-color: #fff;
+        padding         : 40px 40px 20px;
+        margin-top      : 30px;
+        @include border-radius(10px);
+    }
+
+    .wrap h1.wp-heading-inline {
+        font-weight: 600;
+        font-size  : 22px;
+    }
+
+    .search-box input[type="search"],
+    .tablenav .actions select {
+        padding              : 10px 25px;
+        border-radius        : 8px;
+        -webkit-border-radius: 8px;
+        -ms-border-radius    : 8px;
+        border               : 1px solid #ededed;
+        font-size            : 14px;
+        line-height          : 16px;
+        color                : #666;
+        -webkit-appearance   : none;
+        -moz-appearance      : none;
+        appearance           : none;
+    }
+
+    #search-submit {
+        padding         : 4px 20px;
+        border          : none;
+        background-color: $primary-color;
+        color           : #fff;
+        font-weight     : 600;
+        @include border-radius(5px);
+    }
+
+    .tablenav {
+        margin: 10px 0 30px;
+
+        .button {
+            line-height: 38px;
+            padding    : 0 20px;
+            border     : none;
+            @include border-radius(5px);
+            font-weight: 600;
+            color      : #101010;
+            outline    : none;
+
+            &:hover,
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .subsubsub {
+        margin-bottom: 20px;
+    }
+
+    .wp-header-end {
+        visibility      : visible;
+        margin          : 0;
+        margin-top      : 20px;
+        margin-bottom   : 20px;
+        border-top-color: #ededed;
+        border-bottom   : none;
+    }
+
+    .subsubsub a {
+        font-weight: 600;
+        font-size  : 16px;
+        outline    : none;
+        color      : $primary-color;
+
+        &:hover,
+        &:focus {
+            outline   : none;
+            box-shadow: none;
+            border    : none;
+        }
+
+        &.current {
+            color: #101010;
+        }
+    }
+
+    #post-body #normal-sortables {
+        min-height: 1px;
+    }
+
+    .wp-heading-inline+.page-title-action {
+        background-color: $primary-color;
+        color           : #fff;
+        border          : none;
+        padding         : 6px 8px;
+        @include border-radius(5px);
+        outline: none;
+
+        &:focus {
+            outline   : none;
+            box-shadow: none;
+            border    : none;
+        }
+    }
+
+    .wp-list-table {
+        border: none;
+
+        thead,
+        tfoot {
+            tr {
+
+                th,
+                td {
+                    background : #EEF1FF;
+                    border     : none;
+                    font-weight: 500;
+                    line-height: 2em;
+                }
+            }
+        }
+
+        #the-list {
+            tr {
+                background-color: #FBFBFF;
+
+                td,
+                th {
+                    border-bottom: 1px solid #EAEAEA;
+                }
+            }
+        }
+    }
+}
+
+.etn-report-cell{
+    margin-left: 10px;
+}
+
+// ads banner 
+.etn-notice-buy-pro-banner{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: $primary-color;
+    min-height: 190px;
+    .notice-banner-link{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .notice-dismiss:before{
+        color: #fff;
+      }
+  
+  }
+
+  
+.etn-icon-get-pro {
+    font-size: 17px; 
+    color: $primary-color;
+  }
+
+  .etn-text-get-pro {
+    color: $primary-color;
+    font-weight: bold;
+  }
+
+  .etn-plugin-meta-rate-icon {
+    color: $primary-color;
+    font-size: 10px;
+    display: inline-block;
+    vertical-align: baseline;
+    width: auto;
+}
+
+  @media(max-width: 1600px){
+    .etn-notice-buy-pro-banner{
+      min-height: 130px;
+    }
+  }
+  @media(max-width: 1200px){
+    .etn-notice-buy-pro-banner{
+      min-height: 100px;
+    }
+  }
+
+  
+.wpmet_pro_a_wrapper {
+    text-align: center;
+}
+
+
+
+// shortcode settings
+.shortcode-generator-main-wrap{
+    display: none;
+    overflow-x: auto;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+
+  
+}
+button.etn-btn.s-generate-btn {
+    padding: 0 20px;
+    line-height: 20px;
+    margin-left: 15px;
+    height: 45px;
+    background-color: $primary-color;
+    &:hover{
+        background-color: $secondary-color;
+    }
+}
+.shortcode-generator-inner{
+    transform: translateY(10%);
+    width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 18%);
+    border-radius: 10px;
+
+    .etn-setting-input,
+    .etn-form-control {
+        width        : 100%;
+        height       : 44px;
+        padding      : 10px 25px;
+        border-radius: 5px;
+        border       : 1px solid #CCCCCC;
+
+        font-size         : 14px;
+        line-height       : 16px;
+        color             : #666;
+        -webkit-appearance: none;
+        -moz-appearance   : none;
+        appearance        : none;
+
+        &:focus {
+            border: 1px solid $primary-color;
+        }
+    }
+    .etn-field-wrap {
+        margin-bottom: 20px;
+        select{
+            width: 100%;
+        }
+    }
+}
+
+.copy_shortcodes{
+    display: none;
+    margin-top: 20px;
+}
+
+.shortcode-popup-close{
+    position: absolute;
+    right: -7px;
+    top: -5px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: #f00;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.etn-report-resend-emails.etn-btn-secondary {
+    cursor: text;
+  } 
+
+//   recurring meta field css
+.set_recurrence_item{
+    .etn-label{
+        padding: 40px 0;
+    }
+    .etn-meta{
+        border-top: 1px solid #eaeaea;
+        border-bottom: 1px solid #eaeaea;
+        padding: 40px 0;
+        width: 100%;
+        @media (min-width: 1400px) {
+            width: 500px;
+        }
+        .etn-recurring-single-item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            .etn-form-control{
+                font-weight: 600;
+                width: 150px;
+                padding: 10px 15px;
+            }
+        }
+        .etn-recurring-event-every-label{
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0 8px 8px 0;
+            @media (min-width: 1025px) {
+                flex: 0 0 35%;
+                max-width: 35%;
+            }
+        }
+        .event-interval-week-name-container{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            li{
+                input[type="checkbox"]{
+                    display: none;
+                    &:checked + label{
+                        background-color: $primary-color;
+                        color: #fff;
+                    }
+                }
+                label{
+                    width: 34px;
+                    height: 34px;
+                    background-color: #EBEEF3;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0 3px;
+                    text-align: center;
+                    padding: 7px 0;
+                    font-size: 16px;
+                    font-weight: 600;
+                    @include border-radius(5px);
+                }
+            }
+        }
+    }
+} 
+// recurrence meta end
+
+// event meta
+.etn-label-item{
+    .etn-meta{
+        position: relative;
+        .required-text{
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            color: #f00;
+            font-size: 12px;
+        }
+    }
+}
+
+
+.etn-event-dashboard-recurrence-child {
+    background-color: #5D5DFF;
+  }
+  .etn-event-dashboard-recurrence-no{
+    background-color: #707070;
+  }
+  .etn-event-dashboard-recurrence-parent{
+    background-color: yellowgreen;
+  }
+  .etn-event-dashboard-recurrence{
+    color: #DDDDDD;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+.etn-recurring-event-warning {
+    background-color: #ebeef3;
+    color: #c45500;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  .wpmet-notice {
+    img{
+        max-width: 100%!important;
+        max-height: 100%!important;
+    }
+  }
+
+
+#etn_attendee_meta{
+    .inside{
+        display: flex;
+        flex-direction: column;
+
+        .view-order-button{
+            order: 1;
+        }
+    }
+}  
+
+/* Settings tab */
+
+    // admin tab
+.etn-settings-tab-wrapper{
+    &.etn-settings-tab-style{
+        .etn-settings-nav{
+            border-bottom: 1px solid #D2D5DF;
+            li{
+                
+			display: inline-block;
+			margin: 0 10px 0 0;
+                a{
+                    display: block;
+                    cursor: pointer;
+                    font-weight: 500;
+                    color: #000;
+                    position: relative;
+                    border: none;
+                    padding: 15px 0;
+                    font-size: 16px;
+                    margin-right: 15px;
+                    &.etn-settings-active{
+                        background-color: transparent;
+                        color: $primary-color;
+                        &:before{
+                            width: 100%;
+                            border: none;
+                            left: 0;
+                            bottom: -2px;
+                            border-bottom: 3px solid;
+                            border-color:  $primary-color;
+                        }
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                    }
+                    &.etn-settings-active{
+                        &::before{
+                             opacity: 1;
+                             visibility: visible;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .etn-settings-tab-content{
+        padding-top: 20px;
+        #slug-options,
+        #color-options{
+            display: none;
+        }
+    }
+}
+
+// admin tab style 2
+.shortcode-generator-wrap{
+    &:last-child{
+        .etn-label-item{
+            margin-bottom: 15px;
+        }
+    }
+    &:first-child{
+            margin-top: 30px;
+    }
+}
+.etn-recaptcha-settings{
+    .etn-label-item{
+        &:last-child,
+        &:only-child{
+            margin-bottom: 0;
+        }
+    }
+}
+#etn-attendee_data{
+    .etn-label-item{
+        &:last-child,
+        &:only-child{
+            margin-bottom: 0;
+        }
+    }
+}

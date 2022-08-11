@@ -1,0 +1,259 @@
+$white-color: #fff;
+$primary-color: #5D5DFF;
+$gray-color: #f1f5f8;
+$secondary-color: #09C4B7;
+$gradient-color: linear-gradient(80deg, #45137B 0%, #5D5DFF 100%);
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -ms-border-radius: $radius;
+}
+
+//usage: @include shift([property],[duration],[easing]);
+@mixin transition($property: all, $duration: 0.4s, $ease: ease) {
+    transition: $property $duration $ease;
+    -webkit-transition: $property $duration $ease;
+    -moz-transition: $property $duration $ease;
+    -ms-transition: $property $duration $ease;
+}
+
+@mixin flex-position($display, $contet, $items) {
+    display: $display;
+    justify-content: $contet;
+    align-items: $items;
+}
+
+
+/*==================================
+   default style
+=================================*/
+// *, *:before, *:after {
+//     box-sizing: border-box;
+//   }
+
+.mb-2{
+    margin-bottom: 10px !important;
+}
+.mb-3{
+    margin-bottom: 15px !important;
+}
+
+a {
+    color: #0073aa;
+}
+
+// etn devider
+.etn-devider {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: $gray-color;
+}
+
+// default btn
+.etn-btn,
+button.etn-btn.etn-btn-primary,
+.attr-btn-primary,
+.etn-attendee-form .etn-btn,
+.etn-ticket-widget .etn-btn,
+.etn-zoom-btn,
+.etn-settings-dashboard .button-primary {
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    background-color: $primary-color;
+    @include border-radius(5px);
+    @include transition();
+    display: inline-block;
+    padding: 5px 20px;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 35px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    &:hover,
+    &:focus {
+        color: #fff;
+        border: none;
+        box-shadow: none !important;
+        outline: none;
+    }
+    &:hover{
+        background-color: $secondary-color;
+    }
+    &.etn-edit-btn {
+        color: rgb(93, 120, 255);
+        background-color: rgb(238, 241, 255);
+        border: none;
+        padding: 0 15px;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+    &.etn-delete-btn {
+        color: $secondary-color;
+        background-color: #ffeeee;
+        border: none;
+        padding: 0 15px;
+    }
+    &.etn-btn-border{
+        border: 1px solid $primary-color;
+        background-color: transparent;
+        background-image: none;
+        color: $primary-color;
+        text-transform: uppercase;
+        &:hover{
+            border-color: $secondary-color;
+            color: $secondary-color;
+        }
+    }
+    &.etn-btn-secondary{
+        background-color: $secondary-color;
+        &:hover{
+            background-color: $primary-color;
+        }
+    }
+}
+.attr-form-control[disabled],
+ .attr-form-control[readonly], 
+ fieldset[disabled]
+ .attr-form-control,
+ .etn-form-control[disabled],
+ .etn-form-control[readonly], 
+ fieldset[disabled]
+ .etn-form-control {
+    background-color: #ebeef3;
+    opacity: 1;
+}
+
+.btn-danger {
+    padding: 10px 15px;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.etn-form-control,
+.etn-attendee-form-wrap .etn-form-control, 
+.attr-form-control {
+    background: #f1f5f8;
+    @include border-radius(5px);
+    border-color: transparent;
+    border: none;
+    height: 45px;
+    line-height: 45px;
+    box-shadow: none;
+    width: 100%;
+    padding: 5px 10px;
+    &:focus,
+    &.focused {
+        box-shadow: none;
+        border: none;
+    }
+}
+
+
+/**
+* Css switch start for setting page
+*/
+
+.etn-meta {
+    input.etn-admin-control-input {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+        display: none;
+    }
+    label.etn_switch_button_label {
+        cursor: pointer;
+        width: 55px;
+        height: 24px;
+        background: #DDDDDD;
+        display: block;
+        border-radius: 100px;
+        position: relative;
+        margin: 0;
+        padding: 0 !important;
+    }
+    label.etn_switch_button_label:after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 15px;
+        height: 15px;
+        background: #fff;
+        border-radius: 90px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.21);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.21);
+    }
+    .etn_switch_button_label:before {
+        content: 'No';
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 10px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    input.etn-admin-control-input:checked+label.etn_switch_button_label {
+        background: $primary-color;
+    }
+    input.etn-admin-control-input:checked+label.etn_switch_button_label:after {
+        left: calc(100% - 5px);
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    input.etn-admin-control-input:checked+label.etn_switch_button_label:before {
+        content: "Yes";
+        right: inherit;
+        left: 10px;
+    }
+    label.show_label_text {
+        text-indent: 0px;
+    }
+}
+
+//  radio button style
+.etn-radio-btn {
+    >input[type="radio"] {
+        display: none;
+    }
+    >img {
+        cursor: pointer;
+        border: 1px solid $primary-color;
+        max-width: 100%;
+        @include border-radius((6px));
+    }
+    >input[type="radio"]:checked+img {
+        border: 1px solid $secondary-color;
+    }
+}
+
+// etn title
+.etn-title{
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.hide_item{
+    display: none;
+}
+.show_item{
+    display: block;
+}
